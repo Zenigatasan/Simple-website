@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" concent="width=device-width">
+  <title>Title still pending</title>
+  <link href="/CSS/styles.css" rel="stylesheet">
+</head>
+<body>
+<header>
+      <h1>A small introduction to programming </h1>
+</header>
+<hr>
+<%- include ("partials/menu.ejs") %>
+<main>
+<div>
+      <p>
+        Coding is not all 
+      </p>
+      <h3><%= binary1 %></h3>
+      <%# text-to-binary-converter package was used to convert "code" to the binary above.%>
+
+      <p>
+        Well in some ways it is, but isn't at the same time. Every singal letter and number are represented by 1's (on) and 0's (off). But it is impractical to write 
+      </p>
+      <h3><%= binary2 %></h3> 
+      <%# text-to-binary-converter package was used to convert "cake" to the binary above.%>
+      <p>
+        Instead we use programing languages that has code to convert high level code, such as the code in the picture on the right, to produce almost everything that a computer dose. 
+      </p>
+     </div> 
+
+    <div>
+    <figure>
+      <img class="sideImage" src="img/codePic.jpg">
+      <figcaption>
+      Coding
+      </figcaption>
+    </figure>
+
+    </div>
+    </main>
+    <%- include ("partials/footer.ejs") %>
+
+</body>
+</html>

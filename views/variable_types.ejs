@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>A short list of Variable types</title>
+    <link href="/CSS/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>A short list of Variable types </h1>
+    </header>
+    <hr>
+      <%- include ("partials/menu.ejs") %>
+    <main>
+      <div>
+      <p>Unlike a pen an paper a computer needs to define the types of data that holds and the way it can be held. This becomes sspecially since if the wrong type is used then it may not act in the way want it too. 
+      </p>
+        <figure>
+        <img class="bottomImage" src="img/letters.jpg">
+        <figcaption>
+        Letter, numbers, and load of bool.
+        </figcaption>
+      </figure>
+      </div>
+
+      <ul>
+        <li><div>Numbers</div></li>
+            <li class="subItem"><div>int - integer</div></li>
+              <li class="subList"><div>Allows for whole numbers from -2,147,483,648 to 2,147,483,648</div></li>
+          <li class="subItem"><div>Double</div></li>
+              <li class="subList"><div>Allows for number form 2.22507e-308 to 1.79769e+308</div></li>
+          <li><div>Chracters</div></li>
+            <li class="subItem"><div>char - character</div></li>
+              <li class="subList"><div>Allows for letters, symbols, and numbers but only one at a time. Such as "a","A","1","9", and "&". But where thing get weird depends on the programign language uesd. Even though you have 1 + 1 it might make 11 since it sees it as a letter and not a number.</div></li>
+          <li class="subItem"><div>String</div></li>
+              <li class="subList"><div>Allows for a set of letters, numbers, and symbols all stored in one variable. Such as "Run dog run!!!".</div></li>
+          <li><div>Boolian operators</div></li>
+            <li class="subItem"><div>bool</div></li>
+              <li class="subList"><div>A real on off situation, well at least 1 and 0. The most stable an smallest pice of data that can be used is a bit that is on (1) or off (0). This becomes usefull when you don't have much space or needs to check something quickly.</div></li>
+      </ul>
+    </main>
+    <div>
+      <h4>Resoruces</h4>
+      <a class="resource" href="https://www.cs.utah.edu/~germain/PPS/Topics/data_types.html">Data types</a>
+      <a class="resource" href="https://www.oreilly.com/library/view/c-cookbook/0596007612/ch03s08.html">Value maximums and minimums</a>
+    </div>
+    <%- include ("partials/footer.ejs") %>
+  </body>
+</html>

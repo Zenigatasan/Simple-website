@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>A few methods of sorting</title>
+    <link href="/CSS/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>A short list of types of Sorting </h1>
+    </header>
+    <hr>
+    <%- include ("partials/menu.ejs") %>
+    <main>
+    <div>
+      <p>
+        Data, Data, and more data. There are plenty of reasons to take a heap of information and sort through them. Like if you wanted to know the largest, smallest, or median number in a set of data. To do this though there are many different ways to do so. A few are listed below.
+        </p> 
+        <table>
+          <!-- caption is a tag not in the lab.-->
+          <caption><h2>Sort types</h2></caption>
+          <tr>
+            <th>Sort Name</th>
+            <th>Sort time average</th>
+            <th>Basic discription</th>
+          </tr>
+          <tr>
+            <!-- b is a tag not found in the lab to bolden the text -->
+            <td><b>Bubble Sort</b></td>
+            <td><b>θ(n^2)</b></td>
+            <td>Uses comparison of two numbers next to each other and swaping them if they are not in order. Each pass through will set a digit on the end. Making it so each pass through dose not have to check the numbers it set with each pass. This is a very simple way of sorting that dose not require extra space but is slowed by the number of comparison it needs to make. For if the array was in order it would still make the same numver of passes as if it was compleatly jumbled or the reverse of the desired sort.</td>
+          </tr>
+          <tr>
+              <td><b>Radix Sort</b></td>
+              <td><b>θ(nk)</b></td>
+              <td>Uses a series of arrays, one for each possible number. Starting with the smallest digit places the each number into a array. Then starting with the lowest value bucket it will sort again for the second digit of each number and so on until every digit has been checked. The order in wich they will up will be sorted. This avoids compairing numbers uses more space to sort and requires checking each number by a multiple of the number of digits in the gretest value.</td>
+          </tr>
+          <tr>
+              <td><b>Bucket Sort</b></td>
+              <td><b>θ(n+k)</b></td>
+              <td>Uses a series of arrays, or as it is refered to in this case buckets. Each bucket holds a certian range of variables. Every gets placed into the buckets. They are then sorted in each bucket. Which leaves the flexability to leave them in said buckets or place them back in order to the original array. This type of sort uses more space but makes sorting each bucket faster.</td>
+          </tr>
+          <tr>
+              <td><b>Quick Sort</b></td>
+              <td><b>θ(n log(n))</b></td>
+              <td>Uses a divid and conqure approach to sort. It makes a pivot point from wich it will split into a greater and lesser side. Then will keep shifting the pivot point to the middle of the section being worked on utill everything is sorted. Doing it this way dose not require an extra array but can take a longer time than some other sorting methods if the array is reversed of the way you want to sort it.</td>
+          </tr>
+        </table>
+     </div> 
+
+    <div>
+    <figure>
+      <img class="sideImage" src="img/sorting.jpg">
+      <figcaption>
+      Sorting is very useful, even before computers.
+      </figcaption>
+    </figure>
+
+    </div>
+  </main>
+  <div>
+      <h4>Resoruces</h4>
+      <a class= "resource" href="https://www.geeksforgeeks.org/time-complexities-of-all-sorting-algorithms/">Sort times</a>
+      <a class= "resource" href="https://en.wikipedia.org/wiki/Sorting_algorithm#Bubble_sort">Sort descriptions</a>
+  </div>
+    <%- include ("partials/footer.ejs") %>
+  </body>
+</html>

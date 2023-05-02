@@ -1,0 +1,83 @@
+body {
+  background-color: gray;
+}
+
+h1 {
+  color: blue;
+  font-family: Luminari, fantasy; 
+}
+
+h3 {
+  color: brown;
+  font-family: Verdana, sans-serif;
+  letter-spacing: 3px;
+}
+
+h5 {
+  color: aquamarine;
+}
+
+.sideImage {
+  height: 400px;
+  width: 600px;
+  padding: 10px;
+}
+
+.bottomImage {
+  height: 400px;
+  width: 600px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  justify-self: right;
+}
+
+main {
+  display:flex; 
+}
+
+p {
+  text-indent: 20px;
+}
+
+table, td {
+  border-style: double;
+  border-color: brown;
+  width: 1000px;
+}
+
+th {
+  color: brown
+}
+
+a:hover {
+  color: rgb(51, 253, 51);
+}
+
+#current {
+  color: rgb(4, 179, 4)
+}
+
+#foot {
+  padding: 20px;
+  text-align: left;
+  text-indent: 0px;
+}
+
+.resource {
+  flex:unset;
+  color: aquamarine;
+}
+
+.subItem {
+  list-style-type:circle;
+  margin-left: 20px;
+}
+
+.subList {
+  list-style-type: square;
+  margin-left: 40px;
+}
